@@ -20,7 +20,7 @@ import st_data  # noqa: E402
 W = 64  # full cell width (tables 1, 4, 7)
 H = 46
 HW = W / 2  # half-width cells (tables 2, 3, 5, 6)
-X0, Y0 = 40, 70
+X0, Y0 = 40, 84
 INK = "#1d1d1f"
 RED = "#c0392b"
 LOST = "#f3e3c3"
@@ -55,8 +55,9 @@ def main() -> None:
         f'<text x="{X0}" y="34" font-size="20" fill="{INK}">Dee\'s Seven Tables of Creation '
         "(Sloane MS 3188 ff. 37v-38r), as drawn by Whitby (1982)</text>",
         f'<text x="{X0}" y="56" font-size="13" fill="#555">Table 1 centre; 2 and 3 above; '
-        "7 left, 4 right; 6 and 5 below. Shaded: lost or fragmentary; purple frame: entry that "
-        "does not fit Dee's name list; red glyphs: known only from Ashmole's 1672 copy.</text>",
+        "7 left, 4 right; 6 and 5 below. Shaded: lost or fragmentary; purple frame: anomalous "
+        "entry (does not fit Dee's name list, or number read twice); red: known only from "
+        "Ashmole's 1672 copy.</text>",
     ]
     for t in range(1, 8):
         ox, oy, cw = origin(t)
@@ -92,11 +93,15 @@ def main() -> None:
             key = f"r{c['row']}c{c['col']}"
             if key in opts and c["state"] != "intact":
                 o = opts[key]
-                label = " ".join(o) if len(o) <= 3 else f"{len(o)} options"
-                out.append(
-                    f'<text x="{x + cw / 2}" y="{y + 38}" font-size="7.5" text-anchor="middle" '
-                    f'fill="#7a5a1a">{escape(label)}</text>'
-                )
+                # at most two options per line, so the labels fit the half-width cells
+                rows = [" ".join(o[i : i + 2]) for i in range(0, len(o), 2)]
+                if len(o) > 3:
+                    rows = [f"{len(o)} possible"]
+                for j, label in enumerate(rows):
+                    out.append(
+                        f'<text x="{x + cw / 2}" y="{y + 30 + 8 * j}" font-size="6.5" '
+                        f'text-anchor="middle" fill="#7a5a1a">{escape(label)}</text>'
+                    )
     by = Y0 + 21 * H + 30
     t2, t3 = pl["tables"]["2"], pl["tables"]["3"]
     lines = [

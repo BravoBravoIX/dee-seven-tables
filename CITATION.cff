@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "The lost cells of John Dee's Seven Tables of Creation cannot be placed: a test of 20 layout rules"
+authors:
+  - family-names: Burford
+    given-names: Brett
+    orcid: "https://orcid.org/0009-0003-6599-8297"
+version: "1.0"
+date-released: 2026-10-19
+repository-code: "https://github.com/BravoBravoIX/dee-seven-tables"
+license: [MIT, CC-BY-4.0]
