@@ -1,0 +1,3 @@
+# Third-party sources, fetched by scripts/fetch_sources.sh; not redistributed
+sources/downloads/
+__pycache__/

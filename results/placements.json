@@ -1,0 +1,482 @@
+{
+ "what": "Exhaustive placements of the lost entries (tables 2 and 3)",
+ "code_commit": "a70ca23eb161fd7b58df33061f1211ca021837a0+dirty",
+ "inputs_sha256": {
+  "cells.csv": "160a7f7b161f466b415e9233faa5d08944e17331cbff67d68f68ac0041a9e7f4",
+  "names.csv": "88c87bdce3c0bd7b2256fa6de7dec3e67d6130b5d2f2ef69c2514b8e9d03142e"
+ },
+ "seed": null,
+ "tables": {
+  "2": {
+   "absent": [
+    "13R",
+    "30R",
+    "36N",
+    "41A"
+   ],
+   "n_placements": 6,
+   "n_distinct_letter_patterns": 3,
+   "forced_by_fragments": {
+    "r4c6": "36N"
+   },
+   "options_per_cell": {
+    "r4c5": [
+     "13R",
+     "30R",
+     "41A"
+    ],
+    "r4c6": [
+     "36N"
+    ],
+    "r4c7": [
+     "13R",
+     "30R",
+     "41A"
+    ],
+    "r5c7": [
+     "13R",
+     "30R",
+     "41A"
+    ]
+   },
+   "families": {
+    "walk_king": {
+     "best_value": 7.0,
+     "n_best": 2,
+     "best": [
+      4,
+      5
+     ]
+    },
+    "walk_knight": {
+     "best_value": 13.0,
+     "n_best": 2,
+     "best": [
+      3,
+      5
+     ]
+    },
+    "walk_wazir": {
+     "best_value": 2.0,
+     "n_best": 6,
+     "best": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    "walk_ferz": {
+     "best_value": 5.0,
+     "n_best": 2,
+     "best": [
+      4,
+      5
+     ]
+    },
+    "walk_dabbaba": {
+     "best_value": 2.0,
+     "n_best": 2,
+     "best": [
+      0,
+      1
+     ]
+    },
+    "walk_alfil": {
+     "best_value": 3.0,
+     "n_best": 2,
+     "best": [
+      2,
+      4
+     ]
+    },
+    "walk_camel": {
+     "best_value": 7.0,
+     "n_best": 2,
+     "best": [
+      1,
+      4
+     ]
+    },
+    "walk_zebra": {
+     "best_value": 5.0,
+     "n_best": 1,
+     "best": [
+      0
+     ]
+    },
+    "walk_king_torus": {
+     "best_value": 8.0,
+     "n_best": 2,
+     "best": [
+      4,
+      5
+     ]
+    },
+    "walk_knight_torus": {
+     "best_value": 15.0,
+     "n_best": 2,
+     "best": [
+      3,
+      5
+     ]
+    },
+    "step7_king": {
+     "best_value": 5.0,
+     "n_best": 4,
+     "best": [
+      0,
+      2,
+      3,
+      5
+     ]
+    },
+    "latin_q": {
+     "best_value": 65.0,
+     "n_best": 1,
+     "best": [
+      5
+     ]
+    },
+    "latin_s": {
+     "best_value": 67.0,
+     "n_best": 2,
+     "best": [
+      2,
+      3
+     ]
+    },
+    "cluster_q": {
+     "best_value": -63.0,
+     "n_best": 1,
+     "best": [
+      1
+     ]
+    },
+    "cluster_s": {
+     "best_value": -65.0,
+     "n_best": 2,
+     "best": [
+      1,
+      4
+     ]
+    },
+    "magic": {
+     "best_value": -1123.4761904761906,
+     "n_best": 1,
+     "best": [
+      1
+     ]
+    }
+   },
+   "applied": {}
+  },
+  "3": {
+   "absent": [
+    "4S",
+    "5U",
+    "6A",
+    "13I",
+    "19A",
+    "28I",
+    "37A",
+    "38R",
+    "44G",
+    "48R"
+   ],
+   "n_placements": 1080,
+   "n_distinct_letter_patterns": 300,
+   "forced_by_fragments": {
+    "r3c1": "5U",
+    "r5c3": "37A"
+   },
+   "options_per_cell": {
+    "r1c1": [
+     "19A",
+     "6A"
+    ],
+    "r3c1": [
+     "5U"
+    ],
+    "r4c1": [
+     "13I",
+     "19A",
+     "28I",
+     "38R",
+     "44G",
+     "48R",
+     "4S",
+     "6A"
+    ],
+    "r4c2": [
+     "28I",
+     "38R",
+     "48R"
+    ],
+    "r4c3": [
+     "13I",
+     "19A",
+     "28I",
+     "38R",
+     "44G",
+     "48R",
+     "4S",
+     "6A"
+    ],
+    "r4c4": [
+     "13I",
+     "19A",
+     "28I",
+     "38R",
+     "44G",
+     "48R",
+     "4S",
+     "6A"
+    ],
+    "r5c1": [
+     "13I",
+     "19A",
+     "28I",
+     "38R",
+     "44G",
+     "48R",
+     "4S",
+     "6A"
+    ],
+    "r5c2": [
+     "13I",
+     "19A",
+     "28I",
+     "38R",
+     "44G",
+     "48R",
+     "4S",
+     "6A"
+    ],
+    "r5c3": [
+     "37A"
+    ],
+    "r7c1": [
+     "13I",
+     "19A"
+    ]
+   },
+   "families": {
+    "walk_king": {
+     "best_value": 10.0,
+     "n_best": 2,
+     "best": [
+      54,
+      55
+     ]
+    },
+    "walk_knight": {
+     "best_value": 9.0,
+     "n_best": 1,
+     "best": [
+      473
+     ]
+    },
+    "walk_wazir": {
+     "best_value": 8.0,
+     "n_best": 1,
+     "best": [
+      15
+     ]
+    },
+    "walk_ferz": {
+     "best_value": 5.0,
+     "n_best": 3,
+     "best": [
+      6,
+      54,
+      306
+     ]
+    },
+    "walk_dabbaba": {
+     "best_value": 8.0,
+     "n_best": 2,
+     "best": [
+      561,
+      705
+     ]
+    },
+    "walk_alfil": {
+     "best_value": 4.0,
+     "n_best": 3,
+     "best": [
+      164,
+      194,
+      200
+     ]
+    },
+    "walk_camel": {
+     "best_value": 8.0,
+     "n_best": 6,
+     "best": [
+      506,
+      518,
+      966,
+      967,
+      991,
+      1015
+     ]
+    },
+    "walk_zebra": {
+     "best_value": 6.0,
+     "n_best": 4,
+     "best": [
+      296,
+      298,
+      305,
+      322
+     ]
+    },
+    "walk_king_torus": {
+     "best_value": 13.0,
+     "n_best": 2,
+     "best": [
+      54,
+      55
+     ]
+    },
+    "walk_knight_torus": {
+     "best_value": 11.0,
+     "n_best": 1,
+     "best": [
+      958
+     ]
+    },
+    "step7_king": {
+     "best_value": 14.0,
+     "n_best": 8,
+     "best": [
+      13,
+      15,
+      120,
+      122,
+      364,
+      366,
+      652,
+      654
+     ]
+    },
+    "latin_q": {
+     "best_value": 67.0,
+     "n_best": 16,
+     "best": [
+      180,
+      181,
+      186,
+      187,
+      252,
+      253,
+      258,
+      259,
+      312,
+      314,
+      324,
+      326,
+      408,
+      410,
+      420,
+      422
+     ]
+    },
+    "latin_s": {
+     "best_value": 68.0,
+     "n_best": 1,
+     "best": [
+      603
+     ]
+    },
+    "cluster_q": {
+     "best_value": -60.0,
+     "n_best": 2,
+     "best": [
+      606,
+      607
+     ]
+    },
+    "cluster_s": {
+     "best_value": -60.0,
+     "n_best": 32,
+     "best": [
+      145,
+      159,
+      171,
+      172,
+      173,
+      185,
+      289,
+      296,
+      317,
+      322,
+      628,
+      670,
+      672,
+      673,
+      680,
+      713,
+      793,
+      807,
+      819,
+      820
+     ]
+    },
+    "magic": {
+     "best_value": -2499.547619047619,
+     "n_best": 1,
+     "best": [
+      925
+     ]
+    }
+   },
+   "applied": {}
+  }
+ },
+ "variants": {
+  "T3_35R_as_38R": {
+   "absent": [
+    4,
+    5,
+    6,
+    13,
+    19,
+    28,
+    35,
+    37,
+    44,
+    48
+   ],
+   "n_placements": 720
+  },
+  "T2_dee_margin_correction": {
+   "absent": [
+    "12R",
+    "36N",
+    "41A",
+    "43L"
+   ],
+   "n_placements": 6
+  },
+  "alan": {
+   "T2_lost": [
+    "15A",
+    "30R",
+    "41A"
+   ],
+   "T2_placements_if_three_empty_cells": 6,
+   "T3_lost": [
+    "18I",
+    "19A",
+    "38R",
+    "44G",
+    "48R"
+   ],
+   "T3_placements_if_five_empty_cells": 120
+  }
+ }
+}

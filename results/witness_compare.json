@@ -1,0 +1,116 @@
+{
+ "what": "Claude API witness against the reconciled eye reading (advisory; never overrides)",
+ "code_commit": "ae5d6989bc57b4430af29ce3fc66d0d3c96e2b70+dirty",
+ "inputs_sha256": {
+  "claude_reads.json": "eb00968ce638e0ced624f8e71483f19bdd568f18917433c07634c1a5ee376409",
+  "claude_reads_b.json": "663cb951fdc105c6e32d9f1984082e7400a19d50806aa175a8a14c1f5459c4ba",
+  "reads.txt": "e9a2a09d815e4abff80fbd8ec5ddfdcffc3475486514927ed1d6172644fafdf8"
+ },
+ "tables_used": {
+  "5": {
+   "file": "claude_reads.json",
+   "prompt_sha256": "6da99d00661c0ff8190af534a27939626047a05700cbaf2c1257bd618c851558",
+   "crop_sha256": "f3813cc1a08c57b009f9c0275e276b53f72393673e80c9a7bd3d09dffe8a255d",
+   "model": "claude-opus-5-5",
+   "cost_usd": 0.01384
+  },
+  "6": {
+   "file": "claude_reads.json",
+   "prompt_sha256": "6da99d00661c0ff8190af534a27939626047a05700cbaf2c1257bd618c851558",
+   "crop_sha256": "a7e0258f2f57c1179badebab2fe847215174a44aac7e3b3e90822b663a22d3d0",
+   "model": "claude-opus-5-5",
+   "cost_usd": 0.024352
+  },
+  "1": {
+   "file": "claude_reads_b.json",
+   "prompt_sha256": "1319bda73b7609097d8f21d9b19b89e1989b82b815bf83cb563288fd2e1cfcc7",
+   "crop_sha256": "f08c5f7ec8a30d4ebdb5a0e5b747a655d65066d6e25748e462f3097dd2aa032c",
+   "model": "claude-opus-5-5",
+   "cost_usd": 0.013804
+  },
+  "2": {
+   "file": "claude_reads_b.json",
+   "prompt_sha256": "1319bda73b7609097d8f21d9b19b89e1989b82b815bf83cb563288fd2e1cfcc7",
+   "crop_sha256": "d7cf1be2ada6d8c77fd8c2a9c9f37687f97db81677cd40ea1b43b5b003a78df6",
+   "model": "claude-opus-5-5",
+   "cost_usd": 0.014624
+  },
+  "3": {
+   "file": "claude_reads_b.json",
+   "prompt_sha256": "1319bda73b7609097d8f21d9b19b89e1989b82b815bf83cb563288fd2e1cfcc7",
+   "crop_sha256": "c76b6ebbf7d639f0eb1d214a1e8513e7419557db4d3d0aac3d1eb4b0059ba45c",
+   "model": "claude-opus-5-5",
+   "cost_usd": 0.007808
+  },
+  "4": {
+   "file": "claude_reads_b.json",
+   "prompt_sha256": "1319bda73b7609097d8f21d9b19b89e1989b82b815bf83cb563288fd2e1cfcc7",
+   "crop_sha256": "adaf6ab1e2751a1566130abea75f937c36ec4551dba39a5bc817b7f725aa9a1e",
+   "model": "claude-opus-5-5",
+   "cost_usd": 0.009924
+  },
+  "7": {
+   "file": "claude_reads_b.json",
+   "prompt_sha256": "1319bda73b7609097d8f21d9b19b89e1989b82b815bf83cb563288fd2e1cfcc7",
+   "crop_sha256": "232b96108e46b664a8d75a782caf80cc12a5d10b91ad3cf817e7acbb9d7ee56f",
+   "model": "claude-opus-5-5",
+   "cost_usd": 0.01002
+  }
+ },
+ "cells": 343,
+ "entries_agree": 337,
+ "entry_disagreements": [
+  {
+   "table": 3,
+   "row": 2,
+   "col": 4,
+   "eye": "30O*",
+   "machine": "30C*"
+  },
+  {
+   "table": 3,
+   "row": 4,
+   "col": 2,
+   "eye": "?8~*",
+   "machine": "8~*"
+  },
+  {
+   "table": 3,
+   "row": 5,
+   "col": 3,
+   "eye": "?7A*",
+   "machine": "7A*"
+  },
+  {
+   "table": 3,
+   "row": 7,
+   "col": 1,
+   "eye": "1?~*",
+   "machine": "1~*"
+  },
+  {
+   "table": 5,
+   "row": 1,
+   "col": 4,
+   "eye": "48O",
+   "machine": "48D"
+  },
+  {
+   "table": 6,
+   "row": 3,
+   "col": 1,
+   "eye": "22O",
+   "machine": "22D"
+  }
+ ],
+ "ink_disagreements": [
+  {
+   "table": 3,
+   "row": 7,
+   "col": 2,
+   "eye": "46S*",
+   "machine": "46S"
+  }
+ ],
+ "bracket_disagreements": []
+}

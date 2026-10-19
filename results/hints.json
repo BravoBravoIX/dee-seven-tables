@@ -1,0 +1,98 @@
+{
+ "grid": {
+  "T2_walk_knight": {
+   "real": 10,
+   "pairs_with_both_scorable": 38,
+   "null_mean": 3.90666,
+   "p": 0.0034199658003419967
+  },
+  "T2_walk_king": {
+   "real": 6,
+   "pairs_with_both_scorable": 38,
+   "null_mean": 5.102,
+   "p": 0.4032059679403206
+  },
+  "T3_walk_knight": {
+   "real": 3,
+   "pairs_with_both_scorable": 29,
+   "null_mean": 2.96531,
+   "p": 0.5855641443585564
+  },
+  "T3_walk_king": {
+   "real": 3,
+   "pairs_with_both_scorable": 29,
+   "null_mean": 4.29071,
+   "p": 0.8283917160828391
+  },
+  "T4_walk_knight": {
+   "real": 4,
+   "pairs_with_both_scorable": 48,
+   "null_mean": 4.90155,
+   "p": 0.7398126018739812
+  },
+  "T4_walk_king": {
+   "real": 12,
+   "pairs_with_both_scorable": 48,
+   "null_mean": 6.36224,
+   "p": 0.019439805601943982
+  },
+  "T5_walk_knight": {
+   "real": 6,
+   "pairs_with_both_scorable": 46,
+   "null_mean": 4.73122,
+   "p": 0.33261667383326166
+  },
+  "T5_walk_king": {
+   "real": 4,
+   "pairs_with_both_scorable": 46,
+   "null_mean": 6.15548,
+   "p": 0.8830111698883011
+  },
+  "T6_walk_knight": {
+   "real": 4,
+   "pairs_with_both_scorable": 42,
+   "null_mean": 4.50266,
+   "p": 0.6762632373676263
+  },
+  "T6_walk_king": {
+   "real": 3,
+   "pairs_with_both_scorable": 42,
+   "null_mean": 5.72683,
+   "p": 0.940640593594064
+  },
+  "T7_walk_knight": {
+   "real": 6,
+   "pairs_with_both_scorable": 48,
+   "null_mean": 4.89716,
+   "p": 0.3639263607363926
+  },
+  "T7_walk_king": {
+   "real": 8,
+   "pairs_with_both_scorable": 48,
+   "null_mean": 6.37672,
+   "p": 0.2995970040299597
+  }
+ },
+ "H1_table2_knight": {
+  "real": 10,
+  "pairs_with_both_scorable": 38,
+  "null_mean": 3.90666,
+  "p": 0.0034199658003419967,
+  "p_bonferroni2": 0.0068399316006839935
+ },
+ "H2_table4_king": {
+  "real": 12,
+  "pairs_with_both_scorable": 48,
+  "null_mean": 6.36224,
+  "p": 0.019439805601943982,
+  "p_bonferroni2": 0.038879611203887963
+ },
+ "what": "Pre-registered re-tests of the first-pass hints H1 and H2",
+ "code_commit": "a70ca23eb161fd7b58df33061f1211ca021837a0",
+ "inputs_sha256": {
+  "cells.csv": "160a7f7b161f466b415e9233faa5d08944e17331cbff67d68f68ac0041a9e7f4",
+  "names.csv": "88c87bdce3c0bd7b2256fa6de7dec3e67d6130b5d2f2ef69c2514b8e9d03142e"
+ },
+ "seed": 20261019,
+ "shuffles": 100000
+}

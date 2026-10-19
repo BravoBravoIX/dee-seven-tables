@@ -1,0 +1,28 @@
+{
+ "what": "Cells where the two eye reads differ, and how each was settled",
+ "inputs_sha256": {
+  "reads.txt": "e9a2a09d815e4abff80fbd8ec5ddfdcffc3475486514927ed1d6172644fafdf8"
+ },
+ "code_commit": "ae5d6989bc57b4430af29ce3fc66d0d3c96e2b70+dirty",
+ "n_cells": 343,
+ "disagreements": [
+  {
+   "table": 3,
+   "row": 7,
+   "col": 2,
+   "read1": "46S",
+   "read2": "46S*",
+   "settled": "46S*",
+   "reason": "read 1 missed that the 6 is red; 2.2x zoom shows the 6 in red, 4 and S black"
+  },
+  {
+   "table": 6,
+   "row": 3,
+   "col": 1,
+   "read1": "22D|O",
+   "read2": "22O",
+   "settled": "22O",
+   "reason": "read 1 undecided D/O at 1x; at 2x the letter has the same shape as the O of 29O beside it"
+  }
+ ]
+}
