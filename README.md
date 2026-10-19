@@ -165,7 +165,9 @@ from a provisional reading. Two points in it were wrong and are corrected here:
 ## 5. Method (pre-registered)
 
 The pre-registration (`results/preregistration.md`) was written and committed to the author's
-working repository before any rule was scored on real data. The code is `code/rules.py`. All
+working repository before any rule was scored on real data (19 October 2026, 11:30 UTC). That
+repository is private, so readers cannot check the timing themselves; treat it as the author's
+statement. The code is `code/rules.py`. All
 random processes use the seed 20261019.
 
 - **20 rule families.** Each turns the visible cells of a table into a prediction for hidden
