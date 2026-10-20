@@ -1,5 +1,9 @@
 # The lost cells of John Dee's Seven Tables of Creation cannot be placed: a test of 20 layout rules
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23488082.svg)](https://doi.org/10.5281/zenodo.23488082)
+
+**Archived on Zenodo** with its paper, code, data and results: [doi:10.5281/zenodo.23488082](https://doi.org/10.5281/zenodo.23488082) (this DOI always opens the latest version).
+
 On 29 April 1582 John Dee drew seven tables of 7 × 7 cells, joined as a cross, from which the
 names of 49 angels are read (British Library, Sloane MS 3188 ff. 37v–38r). The leaf is broken
 along its fold, and some cells of tables 2 and 3 are lost. Every name is known, so the number
