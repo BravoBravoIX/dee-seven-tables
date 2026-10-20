@@ -374,4 +374,4 @@ any errors.
 ## How to cite
 
 Burford, B. (2026). The lost cells of John Dee's Seven Tables of Creation cannot be placed: a
-test of 20 layout rules (version 1.0). https://github.com/BravoBravoIX/dee-seven-tables
+test of 20 layout rules. Zenodo. https://doi.org/10.5281/zenodo.23488082 (this DOI always opens the latest version)
