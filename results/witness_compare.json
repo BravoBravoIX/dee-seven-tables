@@ -1,10 +1,10 @@
 {
- "what": "Claude API witness against the reconciled eye reading (advisory; never overrides)",
- "code_commit": "ae5d6989bc57b4430af29ce3fc66d0d3c96e2b70+dirty",
+ "what": "Claude API witness against the reconciled reading (advisory; never overrides)",
+ "code_commit": "61608bc31ee9a7faa4cc83ce4424f0741e0f2e81+dirty",
  "inputs_sha256": {
-  "claude_reads.json": "eb00968ce638e0ced624f8e71483f19bdd568f18917433c07634c1a5ee376409",
-  "claude_reads_b.json": "663cb951fdc105c6e32d9f1984082e7400a19d50806aa175a8a14c1f5459c4ba",
-  "reads.txt": "e9a2a09d815e4abff80fbd8ec5ddfdcffc3475486514927ed1d6172644fafdf8"
+  "claude_reads.json": "ee73fda88e91a6b2bdbe16a3ddca30e55337e2132dada2b3f1bdb39b6048c477",
+  "claude_reads_b.json": "ad73f194dd87e89457564c28b39dba1d373d9d6a96931d27268f9ceff5b73e87",
+  "reads.txt": "c6addc4e8bd87c45e289e21edda587eed671ddf327956e7e95aab42deaa0224f"
  },
  "tables_used": {
   "5": {

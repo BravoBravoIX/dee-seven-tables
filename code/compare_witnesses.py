@@ -1,4 +1,4 @@
-"""Compare the machine witness (Claude API reads) with the reconciled eye reading.
+"""Compare the machine witness (Claude API reads) with the reconciled reading.
 
 The machine reading never changes data/cells.csv. Every disagreement is listed for a look.
 Usage: python -I compare_witnesses.py
@@ -60,7 +60,7 @@ def main() -> None:
         if eb != mb:
             bracket_dis.append(rec)
     out = {
-        "what": "Claude API witness against the reconciled eye reading (advisory; never overrides)",
+        "what": "Claude API witness against the reconciled reading (advisory; never overrides)",
         "code_commit": st_data.code_commit(),
         "inputs_sha256": {f: st_data.sha256(st_data.RESULTS / f) for f in files}
         | {"reads.txt": st_data.sha256(st_data.DATA / "reads.txt")},

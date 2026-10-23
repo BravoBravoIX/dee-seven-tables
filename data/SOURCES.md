@@ -10,7 +10,7 @@
 | "Alan", comment of 20 June 2025 on Cipher Mysteries, "John Dee's Tabula Angelorum Bonorum 49" | https://ciphermysteries.com/2025/06/08/john-dees-tabula-angelorum-bonorum-49 (read 19 Oct 2026) | cited for comparison only |
 
 Files here:
-- `reads.txt`: two independent eye reads of the figure, cell by cell (our own work).
+- `reads.txt`: two separate reads of the figure, cell by cell, made from crops of it by Claude.
 - `cells.csv`: the reconciled transcription, 343 cells, rebuilt from `reads.txt` by `code/build_cells.py`.
 - `names.csv`: Dee's 49 names as listed on f. 40a, with page references.
 

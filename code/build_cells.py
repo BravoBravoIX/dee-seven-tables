@@ -1,4 +1,4 @@
-"""Build data/cells.csv from the two eye reads (data/reads.txt) and list where they differ.
+"""Build data/cells.csv from the two reads (data/reads.txt) and list where they differ.
 
 Settlements of disagreements are written here, in SETTLE, with the reason; nothing is
 emended. Anomalies are kept exactly as read.
@@ -191,7 +191,7 @@ def main() -> None:
     (st_data.RESULTS / "read_disagreements.json").write_text(
         json.dumps(
             {
-                "what": "Cells where the two eye reads differ, and how each was settled",
+                "what": "Cells where the two reads differ, and how each was settled",
                 "inputs_sha256": {"reads.txt": st_data.sha256(st_data.DATA / "reads.txt")},
                 "code_commit": st_data.code_commit(),
                 "n_cells": len(rows),

@@ -32,7 +32,7 @@ same ground in more detail.
 
 | Question | Answer | How firm |
 |---|---|---|
-| Can the drawing be read cell by cell? | Yes: 343 cells | Two eye reads differ at 2 cells, both settled at higher zoom; a machine witness agrees on 337 of 343 entries |
+| Can the drawing be read cell by cell? | Yes: 343 cells | Two reads by Claude differ at 2 cells, both settled at higher zoom; a machine witness (Claude API) agrees on 337 of 343 entries |
 | Which entries are lost? | Table 2: 13R, 30R, 36N, 41A. Table 3: 4S, 5U, 6A, 13I, 19A, 28I, 37A, 38R, 44G, 48R | Exact: each table's absent numbers, with letters from Dee's own name list |
 | How many placements do the fragments allow? | Table 2: 6. Table 3: 1,080 | Exhaustive enumeration |
 | Does any of 20 layout rules predict hidden cells better than chance? | No | Best family: p = 0.013 before correction, 0.25 after (Holm, 20 families; 20,000 shuffled controls) |
@@ -85,16 +85,16 @@ Details: `data/SOURCES.md`.
 
 343 cells: table, row, column, number, letter, ink, state, note and source.
 
-- **Two independent eye reads** (`data/reads.txt`), with different crops, zoom and order. They
+- **Two separate reads by Claude** (`data/reads.txt`), with different crops, zoom and order. They
   differ at 2 cells, both settled at higher zoom (`results/read_disagreements.json`):
   - table 6 r3c1: read 1 could not decide between 22D and 22O; it is 22O;
   - table 3 r7c2: read 1 missed that the 6 of 46S is red.
 - **A machine witness.** The Claude API (Anthropic) read each whole table from a crop of the
   figure (12 calls, 0.12 USD in all; `results/claude_reads.json`, `results/claude_reads_b.json`).
-  - Five of its first seven answers were refusals; a plainer prompt was then answered. Both
-    prompts are recorded.
+  - Five of its first seven answers were refusals; a plainer prompt was then answered. The
+    SHA-256 of both prompts is recorded.
   - Its answers were parsed against a fixed format and never change a reading.
-  - It agrees with the eye reading on **337 of 343** entries (`results/witness_compare.json`).
+  - It agrees with the reconciled reading on **337 of 343** entries (`results/witness_compare.json`).
     Of the 6 differences, 3 are notation only (whether a lost leading digit is marked) and 3 are
     letter shapes: table 3 r2c4 30O (read C), table 5 r1c4 48O and table 6 r3c1 22O (read D).
     Whitby's O has a flattened left side, and the same shape is O in 49O and 29O beside them.
@@ -269,7 +269,7 @@ were first seen on the provisional reading: table 2, 11 knight pairs against abo
   later edition; studies by Harkness, Asprem and Laycock (print only).
 
 **What this study adds**, as far as our searches found:
-1. A cell-level, machine-readable transcription of the figure, with two eye reads and a
+1. A cell-level, machine-readable transcription of the figure, with two reads and a
    machine witness, and with the anomalies kept as read.
 2. A complete list of the lost entries with exact placement counts (6 and 1,080), and the
    reasons Alan's list and Whitby's own table 3 list differ from it.
@@ -314,7 +314,7 @@ uv run --no-project --python 3.13 --with numpy==2.5.4 code/run_all.sh   # about 
 git diff --stat                               # see below for the fields that differ
 ```
 
-- `run_all.sh` rebuilds `data/cells.csv` from the two eye reads, then the witness comparison,
+- `run_all.sh` rebuilds `data/cells.csv` from the two reads, then the witness comparison,
   the hints, the rule search, the placements and the figure. The rule search runs under
   `nice -n 19`; `PROCS=n` sets the number of processes, and the results do not depend on it.
 - The Claude API reads are recorded results, not rerun (they need an API key and the crops).
@@ -351,12 +351,16 @@ git diff --stat                               # see below for the fields that di
   sums are in `results/claude_reads*.json`.
 - No manuscript or thesis images are included. The figure in `results/` is our own drawing.
 
+**How AI was used.** The 343 cells were read from crops of Whitby's figure by Claude in two
+passes, with different crops, zoom and order; they differ at 2 cells, both settled at higher zoom
+(`results/read_disagreements.json`). As a check, Claude (Anthropic, model Opus 5.5) read each
+table once more from a crop; it agrees on 337 of 343 entries (`results/witness_compare.json`)
+and never changes a reading. An AI coding assistant (Claude Code) was used. Every step reruns without any AI service; Claude's readings are stored as data.
+
 ## Acknowledgements
 
-This study stands on Christopher Whitby's transcription, drawing and commentary. The analysis
-code was written with the help of an AI coding assistant (Claude, Anthropic), and the Claude
-API served as one transcription witness. The author checked the results and is responsible for
-any errors.
+This study stands on Christopher Whitby's transcription, drawing and commentary. The author is
+responsible for any errors.
 
 ## References
 

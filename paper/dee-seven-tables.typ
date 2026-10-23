@@ -17,14 +17,14 @@
   #v(0.2em)
   #text(size: 9pt)[ORCID #link("https://orcid.org/0009-0003-6599-8297")[0009-0003-6599-8297] · Independent researcher, Australia]
   #v(0.2em)
-  #text(size: 9pt)[Working paper, version 1.0, 19 October 2026 · not peer reviewed]
+  #text(size: 9pt)[Working paper, version 1.0.1, 21 October 2026 (version 1.0, 19 October 2026) · not peer reviewed]
   #v(0.2em)
   #text(size: 9pt)[Code, data and results: #link("https://github.com/BravoBravoIX/dee-seven-tables")[github.com/BravoBravoIX/dee-seven-tables]]
 ]
 
 #v(0.8em)
 #block(inset: (x: 1.2cm))[
-  #text(weight: "bold")[Abstract.] On 29 April 1582 John Dee drew seven $7 times 7$ tables, joined as a cross, from which the names of 49 angels are read (British Library, Sloane MS 3188 ff. 37v–38r). The leaf is broken along its fold, and cells of tables 2 and 3 are lost. Every name is known, so the number and letter of each lost entry are known; what is lost is which cell each stood in. Whitby (1982) wrote that the positions "cannot be ascertained" because "there is no rule for individual placings". This note tests that statement. From a cell-by-cell transcription of Whitby's drawing (two eye reads, which differ at 2 of 343 cells; a machine witness agrees on 337 of 343 entries), the lost entries are 13R, 30R, 36N and 41A in table 2 and ten entries in table 3; the surviving fragments allow 6 and 1,080 placements. Twenty families of layout rules, fixed in advance, were scored on 720 legible cells hidden from them, against 20,000 copies of the tables with their numbers shuffled. No family passes after a Holm correction (best: $p = 0.013$, Holm $0.25$), so by the pre-registered stop rule no lost cell is placed. Two patterns seen earlier (consecutive numbers a knight's move apart in table 2, and king-adjacent in table 4) survive the checked transcription but not an allowance for how they were found, and remain leads only. The evidence does not decide where the lost entries stood, which agrees with Whitby.
+  #text(weight: "bold")[Abstract.] On 29 April 1582 John Dee drew seven $7 times 7$ tables, joined as a cross, from which the names of 49 angels are read (British Library, Sloane MS 3188 ff. 37v–38r). The leaf is broken along its fold, and cells of tables 2 and 3 are lost. Every name is known, so the number and letter of each lost entry are known; what is lost is which cell each stood in. Whitby (1982) wrote that the positions "cannot be ascertained" because "there is no rule for individual placings". This note tests that statement. From a cell-by-cell transcription of Whitby's drawing (two reads by Claude, which differ at 2 of 343 cells; a machine witness agrees on 337 of 343 entries), the lost entries are 13R, 30R, 36N and 41A in table 2 and ten entries in table 3; the surviving fragments allow 6 and 1,080 placements. Twenty families of layout rules, fixed in advance, were scored on 720 legible cells hidden from them, against 20,000 copies of the tables with their numbers shuffled. No family passes after a Holm correction (best: $p = 0.013$, Holm $0.25$), so by the pre-registered stop rule no lost cell is placed. Two patterns seen earlier (consecutive numbers a knight's move apart in table 2, and king-adjacent in table 4) survive the checked transcription but not an allowance for how they were found, and remain leads only. The evidence does not decide where the lost entries stood, which agrees with Whitby.
 ]
 
 = The problem
@@ -39,7 +39,7 @@ The name-reading rule uses only the numbers, so it says nothing about where a ce
 
 Every cell was read from Whitby's drawing (vol. II p. 121; a colour scan at 416 ppi in the open-access thesis), and the names from Dee's own list of the same day, the _Tabula Collecta_ (f. 40a; Whitby vol. II pp. 127–129). Whitby's commentary (vol. I p. 339) says he drew in red the entries that appear in Ashmole's copy but have since been lost from Dee's leaf. The red is therefore not Dee's ink, and it lies along the fold; cells left empty were already lost in 1672.
 
-Two independent eye reads, with different crops, zoom and order, differ at 2 of 343 cells, both settled at higher zoom (22O, not 22D, in table 6; a red 6 in table 3's 46S). As a machine witness the Claude API read each table from a crop (12 calls; five of the first seven were refused, and a plainer prompt was answered). It agrees on 337 of 343 entries; 3 differences are notation for a lost digit and 3 are one letter shape, Whitby's flat-sided O, read as C or D. Its answers never change a reading. Anomalies are kept as read: table 2 43R (Dee's margin note corrects it), table 3 35R, table 5 39O, and table 6 19M (19 twice, 17 absent) and 23D. In the analysis an anomalous cell stays in place and its number is not used.
+Two separate reads by Claude, with different crops, zoom and order, differ at 2 of 343 cells, both settled at higher zoom (22O, not 22D, in table 6; a red 6 in table 3's 46S). As a machine witness the Claude API read each table from a crop (12 calls; five of the first seven were refused, and a plainer prompt was answered). It agrees on 337 of 343 entries; 3 differences are notation for a lost digit and 3 are one letter shape, Whitby's flat-sided O, read as C or D. Its answers never change a reading. Anomalies are kept as read: table 2 43R (Dee's margin note corrects it), table 3 35R, table 5 39O, and table 6 19M (19 twice, 17 absent) and 23D. In the analysis an anomalous cell stays in place and its number is not used.
 
 = The lost entries
 
@@ -105,9 +105,13 @@ No family passes, so by the stop rule no lost cell is placed. Per table (seconda
 
 Code (MIT), our transcription and all results (CC BY 4.0) are at #link("https://github.com/BravoBravoIX/dee-seven-tables")[github.com/BravoBravoIX/dee-seven-tables]. Whitby's thesis is not redistributed; a script downloads it and checks its SHA-256. From `data/` the pipeline rebuilds every results file byte for byte, apart from two run-record fields (the commit and the run time); the API witness reads are recorded results and are not rerun.
 
+= How AI was used
+
+The 343 cells were read from crops of Whitby's figure by Claude in two passes, with different crops, zoom and order; they differ at 2 cells, both settled at higher zoom. As a check, Claude (Anthropic, model Opus 5.5) read each table once more from a crop; it agrees on 337 of 343 entries and never changes a reading. An AI coding assistant (Claude Code) was used. Every step reruns without any AI service; Claude's readings are stored as data.
+
 = Acknowledgements
 
-This note stands on Christopher Whitby's transcription, drawing and commentary. The analysis code was written with the help of an AI coding assistant (Claude, Anthropic), and the Claude API served as one transcription witness. The author checked the results and is responsible for any errors.
+This note stands on Christopher Whitby's transcription, drawing and commentary. The author is responsible for any errors.
 
 = References
 
